@@ -36,7 +36,7 @@ function ErrorHandler() {
 
 ```
 
-### The New `Array.prototype.at` Function
+### The New `Array.prototype.at` Function (16.6.0)
 
 you can now use the newly `at` function.
 
@@ -56,4 +56,22 @@ console.log(`First Item: ${firstItem}`); // prints 1
 console.log(`Last Item: ${lastItem}`); // prints 5
 ```
 
-### The
+### Timers Are Now Available As A Promise
+
+You can now require `timers/promise` and get this timers as promise :smile:
+
+* `setTimeout`
+* `setImmediate`
+* `setInterval`
+
+```js
+const { setTimeout } = require('timers/promise');
+
+async function computerStartup() {
+  console.log('Doing important Stuff!')
+
+  const message = await setTimeout(1000, "Done!")
+
+  console.log(message) // prints "Done!"
+}
+```
