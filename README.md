@@ -56,7 +56,7 @@ console.log(`First Item: ${firstItem}`); // prints 1
 console.log(`Last Item: ${lastItem}`); // prints 5
 ```
 
-### Timers Are Now Available As A Promise
+### Timers Are Now Available As A Promise (16.0.0)
 
 You can now require `timers/promise` and get this timers as promise :smile:
 
@@ -75,3 +75,7 @@ async function computerStartup() {
   console.log(message) // prints "Done!"
 }
 ```
+
+### Node Is now Available For Apple silicon (16.0.0)
+
+You can now Download from nodejs's site a compatible version with apple silicon
