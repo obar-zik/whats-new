@@ -1,4 +1,6 @@
-# Node
+# WHATS NEW
+
+this repo is for better understanding the new features in node and npm
 
 ## Features In node 16.x
 
@@ -18,22 +20,19 @@ const secondError = new Error("ANOTHER ERROR!!!!", { cause: firstError });
 
 This can be very helpful when you have an error that caches the error log them and them throw the error again.
 
-
 ```js
-
 function alwaysFails() {
-  throw new Error('😱')
+  throw new Error("😱");
 }
 
 function ErrorHandler() {
   try {
-    alwaysFails()
+    alwaysFails();
   } catch (err) {
-    console.error('JACK! ITS HAPPENED AGAIN!')
-    throw new Error('You handel it', { cause: err })
+    console.error("JACK! ITS HAPPENED AGAIN!");
+    throw new Error("You handel it", { cause: err });
   }
 }
-
 ```
 
 ### The New `Array.prototype.at` Function (16.6.0)
@@ -60,19 +59,19 @@ console.log(`Last Item: ${lastItem}`); // prints 5
 
 You can now require `timers/promise` and get this timers as promise :smile:
 
-* `setTimeout`
-* `setImmediate`
-* `setInterval`
+- `setTimeout`
+- `setImmediate`
+- `setInterval`
 
 ```js
-const { setTimeout } = require('timers/promise');
+const { setTimeout } = require("timers/promise");
 
 async function computerStartup() {
-  console.log('Doing important Stuff!')
+  console.log("Doing important Stuff!");
 
-  const message = await setTimeout(1000, "Done!")
+  const message = await setTimeout(1000, "Done!");
 
-  console.log(message) // prints "Done!"
+  console.log(message); // prints "Done!"
 }
 ```
 
