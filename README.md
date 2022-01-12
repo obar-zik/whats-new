@@ -78,3 +78,13 @@ async function computerStartup() {
 ### Node Is now Available For Apple silicon (16.0.0)
 
 You can now Download from nodejs's site a compatible version with apple silicon
+
+## New Features In NPM 8 / 7
+
+### Dropping Support For `require('npm')` (8.0.0)
+
+from NPM 8 you can't require npm.
+
+### Workspaces (7.0.0)
+
+You can you create a workspace that can control multiple packages at once, this mean
