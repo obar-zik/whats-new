@@ -79,7 +79,7 @@ async function computerStartup() {
 
 You can now Download from nodejs's site a compatible version with apple silicon
 
-## New Features In NPM 8 / 7
+## New Features In NPM 8 / 7 
 
 ### Dropping Support For `require('npm')` (8.0.0)
 
